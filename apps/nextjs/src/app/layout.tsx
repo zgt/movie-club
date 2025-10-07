@@ -13,21 +13,23 @@ import "~/app/globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? "https://turbo.t3.gg"
+      ? "https://movieclub.app"
       : "http://localhost:3000",
   ),
-  title: "Create T3 Turbo",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  title: "Movie Club - Discover Your Next Favorite Film",
+  description:
+    "Curated monthly movie selections delivered as DVDs with handwritten notes and exclusive forum access for fellow film enthusiasts.",
   openGraph: {
-    title: "Create T3 Turbo",
-    description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
-    siteName: "Create T3 Turbo",
+    title: "Movie Club - Discover Your Next Favorite Film",
+    description:
+      "Curated monthly movie selections delivered as DVDs with handwritten notes and exclusive forum access for fellow film enthusiasts.",
+    url: "https://movieclub.app",
+    siteName: "Movie Club",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@jullerino",
-    creator: "@jullerino",
+    site: "@movieclub",
+    creator: "@movieclub",
   },
 };
 
@@ -52,7 +54,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans text-foreground antialiased",
+          "min-h-screen bg-gradient-to-t from-orange-500 via-purple-700 to-blue-600 font-sans text-foreground antialiased",
           geistSans.variable,
           geistMono.variable,
         )}
