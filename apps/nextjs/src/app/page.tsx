@@ -188,7 +188,7 @@ export default function HomePage() {
                     </div>
 
                     {/* DVD case shadow */}
-                    <div className="absolute -right-2 -top-2 -z-10 h-64 w-64 rounded-full bg-black/20" />
+                    <div className="absolute right-0 top-0 -z-10 h-64 w-64 rounded-full bg-black/20" />
                   </div>
 
                   {/* Floating elements */}
